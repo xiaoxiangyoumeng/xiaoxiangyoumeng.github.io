@@ -56,14 +56,14 @@
 
   
   <url>
-    <loc>http://example.com/tags/HFCTF2020-EasyLogin/</loc>
+    <loc>http://example.com/tags/MRCTF2020-Ezpop/</loc>
     <lastmod>2022-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/MRCTF2020-Ezpop/</loc>
+    <loc>http://example.com/tags/HFCTF2020-EasyLogin/</loc>
     <lastmod>2022-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
