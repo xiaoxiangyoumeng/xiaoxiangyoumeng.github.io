@@ -49,22 +49,22 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2022-04-07</lastmod>
+    <lastmod>2022-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://example.com/tags/HFCTF2020-EasyLogin/</loc>
-    <lastmod>2022-04-07</lastmod>
+    <loc>http://example.com/tags/MRCTF2020-Ezpop/</loc>
+    <lastmod>2022-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/MRCTF2020-Ezpop/</loc>
-    <lastmod>2022-04-07</lastmod>
+    <loc>http://example.com/tags/HFCTF2020-EasyLogin/</loc>
+    <lastmod>2022-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -73,7 +73,7 @@
   
   <url>
     <loc>http://example.com/categories/wp/</loc>
-    <lastmod>2022-04-07</lastmod>
+    <lastmod>2022-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
