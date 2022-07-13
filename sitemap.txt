@@ -1,9 +1,11 @@
+http://example.com/2022/07/13/2022%E8%93%9D%E5%B8%BD%E6%9D%AF%E5%88%9D%E8%B5%9B%E9%83%A8%E5%88%86wp/
 http://example.com/2022/04/04/[HFCTF2020]EasyLogin/
 http://example.com/2022/04/04/[MRCTF2020]Ezpop/
 http://example.com/categories/index.html
 http://example.com/tags/index.html
 http://example.com/link/index.html
 http://example.com/
+http://example.com/tags/2022%E8%93%9D%E5%B8%BD%E6%9D%AF%E5%88%9D%E8%B5%9B%E9%83%A8%E5%88%86wp/
 http://example.com/tags/HFCTF2020-EasyLogin/
 http://example.com/tags/MRCTF2020-Ezpop/
 http://example.com/categories/wp/
